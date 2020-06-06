@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/concert-premiere.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+body * {
+  z-index: 1;
+}
+
+h1 {
+  font-size: 60px;
+  padding-top: 50px;
+  margin: -40px 0 10px;
+  
+}
+
+h2 {
+    font-size: 30px;
+    margin: -5px 0 5px;
+}
+
+.countdown {
+  display: flex; 
+  transform: scale(1);
+
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 35px;
+}
+
+.time h2 {
+  margin: 10px 0 5px;
+}
+
+
+.dates-container {
+  margin: 20px 0;
+}
+
+.dates-container select {
+  background-color: #fff;
+  opacity: 60%;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: rgba(8, 178, 245, 0.575);
+  height: 22px;
+  width: 25px;
+  margin: 3px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.seat.selected {
+  background-color: #ff0080;
+}
+
+.seat.occupied {
+  background-color: rgba(245, 243, 215, 0.952);
+}
+
+.seat:nth-of-type(3) {
+  margin-right: 38px;
+}
+
+.seat:nth-last-of-type(3) {
+  margin-left: 38px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 10px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+}
+
+.stage {
+  background-color: #fff;
+  height: 60px;
+  width: 100%;
+  margin: 15px 0;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: none;
+  opacity: 60%;
+  
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: #fcfcfc;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .time {
+    margin: 5px;
+  }
+
+  .time h2 {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .time small {
+    font-size: 10px;
+  }
+}
