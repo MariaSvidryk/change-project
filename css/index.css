@@ -56,11 +56,11 @@ h2 {
 }
 
 
-.dates-container {
+.days-container {
   margin: 20px 0;
 }
 
-.dates-container select {
+.days-container select {
   background-color: #fff;
   opacity: 60%;
   border: 0;
@@ -156,6 +156,11 @@ p.text {
 
 p.text span {
   color: #fcfcfc;
+}
+
+.final-button {
+    opacity: 60%;
+    
 }
 
 @media (max-width: 500px) {
