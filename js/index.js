@@ -7,12 +7,12 @@ const year = document.getElementById('year');
 
 const currentDate = new Date().getFullYear();
 
-const concertTime = new Date(`June 25 ${currentDate} 00:00:00`);
+const concertDate = new Date(`June 25 ${currentDate} 19:00:00`);
 
 // Update countdown time
 function updateCountdown() {
   const currentTime = new Date();
-  const diff = concertTime - currentTime;
+  const diff = concertDate - currentTime;
 
   const d = Math.floor(diff / 1000 / 60 / 60 / 24);
   const h = Math.floor(diff / 1000 / 60 / 60) % 24;
@@ -32,10 +32,12 @@ setInterval(updateCountdown, 1000);
 //MIDDLE PART
 
 const container = document.querySelector('.container');
-const seats = document.querySelectorAll('.row .seat:not(.occupied)');
+const seats = document.querySelectorAll('.row.seat:not(.occupied)');
 const count = document.getElementById('count');
 const total = document.getElementById('total');
 const daySelect = document.getElementById('day');
+const reset = document.getElementById('reset');
+const buy = document.getElementById('buy')
 
 populateUI();
 
@@ -101,3 +103,25 @@ container.addEventListener('click', e => {
 
 // Initial count and total set
 updateSelectedCount();
+
+const toggle = document.getElementById('toggle');
+const close = document.getElementById('close');
+const open = document.getElementById('open');
+const modal = document.getElementById('modal');
+
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('show-nav');
+  document.body.addEventListener('click', closeNavbar);
+});
+
+// Show modal
+open.addEventListener('click', () => modal.classList.add('show-modal'));
+
+// Hide modal
+close.addEventListener('click', () => modal.classList.remove('show-modal'));
+
+// Hide modal on outside click
+window.addEventListener('click', e =>
+  e.target == modal ? modal.classList.remove('show-modal') : false
+);
+
