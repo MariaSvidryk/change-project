@@ -1,35 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 body {
-  background-image: url(../img/concert-premiere.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  color: #fff;
-  font-family: 'Anton', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100vh;
-  font-family: 'Lato', sans-serif;
-  margin: 0;
+    background-image: url(../img/concert-premiere.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
 }
 
 body * {
-  z-index: 1;
+    z-index: 1;
 }
 
 h1 {
-  font-size: 60px;
-  padding-top: 50px;
-  margin: -40px 0 10px;
-  
+    font-size: 60px;
+    padding-top: 50px;
+    margin: -40px 0 10px;
 }
 
 h2 {
@@ -38,116 +33,113 @@ h2 {
 }
 
 .countdown {
-  display: flex; 
-  transform: scale(1);
-
+    display: flex;
+    transform: scale(1);
 }
 
 .time {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
 }
 
 .time h2 {
-  margin: 10px 0 5px;
+    margin: 10px 0 5px;
 }
 
-
 .days-container {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 .days-container select {
-  background-color: #fff;
-  opacity: 60%;
-  border: 0;
-  border-radius: 5px;
-  font-size: 14px;
-  margin-left: 10px;
-  padding: 5px 15px 5px 15px;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
+    background-color: #fff;
+    opacity: 60%;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .container {
-  perspective: 1000px;
-  margin-bottom: 30px;
+    perspective: 1000px;
+    margin-bottom: 30px;
 }
 
 .seat {
-  background-color: rgba(8, 178, 245, 0.575);
-  height: 22px;
-  width: 25px;
-  margin: 3px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+    background-color: rgba(8, 178, 245, 0.575);
+    height: 22px;
+    width: 25px;
+    margin: 3px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .seat.selected {
-  background-color: #ff0080;
+    background-color: #ff0080;
 }
 
 .seat.occupied {
-  background-color: rgba(245, 243, 215, 0.952);
+    background-color: rgba(245, 243, 215, 0.952);
 }
 
 .seat:nth-of-type(3) {
-  margin-right: 38px;
+    margin-right: 38px;
 }
 
 .seat:nth-last-of-type(3) {
-  margin-left: 38px;
+    margin-left: 38px;
 }
 
 .seat:not(.occupied):hover {
-  cursor: pointer;
-  transform: scale(1.2);
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .showcase .seat:not(.occupied):hover {
-  cursor: default;
-  transform: scale(1);
+    cursor: default;
+    transform: scale(1);
 }
 
 .showcase {
-  background: rgba(0, 0, 0, 0.1);
-  padding: 0 10px;
-  border-radius: 5px;
-  color: rgb(255, 255, 255);
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .showcase li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
 }
 
 .showcase li small {
-  margin-left: 2px;
+    margin-left: 2px;
 }
 
 .row {
-  display: flex;
+    display: flex;
 }
 
 .stage {
-  background-color: #fff;
-  height: 60px;
-  width: 100%;
-  margin: 15px 0;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-  box-shadow: none;
-  opacity: 60%;
-  
+    background-color: #fff;
+    height: 60px;
+    width: 100%;
+    margin: 15px 0;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: none;
+    opacity: 60%;
 }
 
 #count {
@@ -155,111 +147,108 @@ h2 {
 }
 
 #total {
-    color:#ff0080;
+    color: #ff0080;
 }
 
 p.text {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 p.text span {
-  color: #fcfcfc;
+    color: #fcfcfc;
 }
 
 .final-buttons {
     opacity: 60%;
-    
 }
 
-button,
-input[type='submit'] {
-  background-color: var(--secondary-color);
-  border: 0;
-  border-radius: 5px;
-  color: rgba(8, 178, 245, 0.575);
-  cursor: pointer;
-  padding: 8px 12px;
+button, input[type='submit'] {
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+    color: rgba(8, 178, 245, 0.575);
+    cursor: pointer;
+    padding: 8px 12px;
 }
 
 .cta-btn {
-  padding: 12px 30px;
-  font-size: 20px;
+    padding: 12px 30px;
+    font-size: 20px;
 }
 
 .modal-container {
-  background-color: white);
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+    background-color: white);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .modal-container.show-modal {
-  display: block;
+    display: block;
 }
 
 .modal {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
-  width: 400px;
-  animation-name: modalopen;
-  animation-duration: var(--modal-duration);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
 }
 
 .modal-header {
-  background: var(--primary-color);
-  color: rgba(8, 178, 245, 0.575);
-  padding: 15px;
+    background: var(--primary-color);
+    color: rgba(8, 178, 245, 0.575);
+    padding: 15px;
 }
 
 .modal-header h3 {
-  margin: 0;
-  border-bottom: 1px solid #333;
+    margin: 0;
+    border-bottom: 1px solid #333;
 }
 
 .modal-content {
-  padding: 20px;
+    padding: 20px;
 }
 
 .modal-form div {
-  margin: 15px 0;
+    margin: 15px 0;
 }
 
 .modal-form label {
-  display: block;
-  margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .modal-form .form-input {
-  padding: 8px;
-  width: 100%;
+    padding: 8px;
+    width: 100%;
 }
 
-
 @media (max-width: 500px) {
-  h1 {
-    font-size: 45px;
-  }
+    h1 {
+        font-size: 45px;
+    }
 
-  .time {
-    margin: 5px;
-  }
+    .time {
+        margin: 5px;
+    }
 
-  .time h2 {
-    font-size: 12px;
-    margin: 0;
-  }
+    .time h2 {
+        font-size: 12px;
+        margin: 0;
+    }
 
-  .time small {
-    font-size: 10px;
-  }
+    .time small {
+        font-size: 10px;
+    }
 }
